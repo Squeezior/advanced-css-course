@@ -558,6 +558,6 @@ function hmrAccept(bundle, id) {
 
 },{}],"j4kuM":[function(require,module,exports) {
 
-},{}]},["aSk5W","j4kuM"], "j4kuM", "parcelRequire11c7")
+},{}]},["aSk5W","j4kuM"], "j4kuM", "parcelRequire6b4a")
 
 //# sourceMappingURL=starter.3464ddca.js.map
