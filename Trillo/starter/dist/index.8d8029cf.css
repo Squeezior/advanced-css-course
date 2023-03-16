@@ -23,6 +23,44 @@ body {
   line-height: 1.6;
 }
 
+.btn-inline {
+  color: #eb2f64;
+  font-size: inherit;
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+  transition: all .2s;
+  display: inline-block;
+}
+
+.btn-inline:hover {
+  color: #333;
+}
+
+.btn-inline:focus {
+  outline: none;
+  animation: 1s infinite pulsate;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem #00000040;
+  }
+
+  100% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+
 .legal {
   color: #ccc;
   text-align: center;
@@ -191,6 +229,73 @@ body {
   margin-right: 1rem;
 }
 
+.gallery {
+  display: flex;
+}
+
+.gallery__photo {
+  width: 100%;
+  display: block;
+}
+
+.overview {
+  border-bottom: 1px solid #f4f2f2;
+  align-items: center;
+  display: flex;
+}
+
+.overview__heading {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.overview__stars {
+  margin-right: auto;
+  display: flex;
+}
+
+.overview__icon-star, .overview__icon-location {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #eb2f64;
+}
+
+.overview__icon-location {
+  margin-right: .5rem;
+}
+
+.overview__location {
+  align-items: center;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.overview__rating {
+  color: #fff;
+  background-color: #eb2f64;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  margin-left: 3rem;
+  padding: 0 2.25rem;
+  display: flex;
+}
+
+.overview__rating-average {
+  margin-bottom: -3px;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.overview__rating-count {
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
 .container {
   max-width: 120rem;
   min-height: 50rem;
@@ -206,7 +311,7 @@ body {
 .header {
   min-height: 7rem;
   background-color: #fff;
-  border-bottom: #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
@@ -215,7 +320,7 @@ body {
 
 .hotel-view {
   height: 80rem;
-  background-color: #ff4500;
+  background-color: #fff;
   flex: 1;
 }
 
