@@ -1,7 +1,12 @@
 @use "../abstracts/variables";
 
 .header {
+  font-size: 1.4rem;
   min-height: 7rem;
   background-color: #fff;
   border-bottom: variables.$grey-light-2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
