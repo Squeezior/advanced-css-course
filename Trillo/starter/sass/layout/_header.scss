@@ -1,0 +1,7 @@
+@use "../abstracts/variables";
+
+.header {
+  min-height: 7rem;
+  background-color: #fff;
+  border-bottom: variables.$grey-light-2;
+}

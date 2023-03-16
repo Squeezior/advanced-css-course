@@ -1,0 +1,7 @@
+@use "../abstracts/variables";
+
+.sidebar {
+  background-color: variables.$grey-dark-1;
+
+  flex: 0 0 18%;
+}

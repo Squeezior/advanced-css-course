@@ -9,6 +9,10 @@
 
 @forward "./components/button";
 
+@forward "./layout/container";
+@forward "./layout/content";
 @forward "./layout/header";
+@forward "./layout/hotel-view";
+@forward "./layout/sidebar";
 
 @forward "./pages/home";

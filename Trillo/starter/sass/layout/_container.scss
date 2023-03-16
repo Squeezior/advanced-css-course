@@ -1,0 +1,10 @@
+@use "../abstracts/variables";
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: variables.$grey-light-2;
+  box-shadow: variables.$shadow-dark;
+
+  min-height: 50rem;
+}
