@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as variables;
+
+.legal {
+  font-size: 1.2rem;
+  color: variables.$grey-light-4;
+  text-align: center;
+  padding: 2.5rem;
+}

@@ -23,6 +23,13 @@ body {
   line-height: 1.6;
 }
 
+.legal {
+  color: #ccc;
+  text-align: center;
+  padding: 2.5rem;
+  font-size: 1.2rem;
+}
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
@@ -79,6 +86,59 @@ body {
   height: 2rem;
   width: 2rem;
   fill: #999;
+}
+
+.side-nav {
+  margin-top: 3.5rem;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.side-nav__item {
+  position: relative;
+}
+
+.side-nav__item:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.side-nav__item:before {
+  content: "";
+  height: 100%;
+  width: 3px;
+  background-color: #eb2f64;
+  transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+}
+
+.side-nav__item:hover:before, .side-nav__item--active:before {
+  width: 100%;
+  transform: scaleY(1);
+}
+
+.side-nav__item:active:before {
+  background-color: #f36;
+}
+
+.side-nav__link:link, .side-nav__link:visited {
+  color: #faf9f9;
+  text-transform: uppercase;
+  z-index: 1;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: currentColor;
+  margin-right: 2rem;
 }
 
 .user-nav {
@@ -154,13 +214,17 @@ body {
 }
 
 .hotel-view {
+  height: 80rem;
   background-color: #ff4500;
   flex: 1;
 }
 
 .sidebar {
   background-color: #333;
+  flex-direction: column;
   flex: 0 0 18%;
+  justify-content: space-between;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
