@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as variables;
+
+.description {
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: variables.$shadow-light;
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+}

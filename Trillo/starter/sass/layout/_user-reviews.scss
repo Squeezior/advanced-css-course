@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as variables;
+
+.user-reviews {
+  // background-color: yellowgreen;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

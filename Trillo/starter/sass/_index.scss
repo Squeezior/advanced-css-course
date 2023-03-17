@@ -8,18 +8,26 @@
 @forward "./base/utilities";
 
 @forward "./components/button-inline";
+@forward "./components/cta";
+@forward "./components/gallery";
 @forward "./components/legal";
+@forward "./components/list";
 @forward "./components/logo";
+@forward "./components/overview";
+@forward "./components/paragraph";
+@forward "./components/recommend";
+@forward "./components/review";
 @forward "./components/searchbox";
 @forward "./components/side-navigation";
 @forward "./components/user-navigation";
-@forward "./components/gallery";
-@forward "./components/overview";
 
 @forward "./layout/container";
 @forward "./layout/content";
+@forward "./layout/description";
+@forward "./layout/detail";
 @forward "./layout/header";
 @forward "./layout/hotel-view";
 @forward "./layout/sidebar";
+@forward "./layout/user-reviews";
 
 @forward "./pages/home";

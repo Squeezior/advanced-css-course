@@ -3,7 +3,7 @@
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid variables.$grey-light-2;
+  border-bottom: variables.$line;
 
   &__heading {
     font-size: 2.25rem;
