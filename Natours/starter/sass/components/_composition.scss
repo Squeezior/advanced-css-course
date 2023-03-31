@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as variables;
+
+.composition {
+  min-width: 40%;
+  position: relative;
+  // flex: 1 1 calc((100% - 2 * #{variables.$gutter-horizontal}) / 3);
+  margin-left: 10rem;
+
+  // display: flex;
+  // flex-direction: column;
+  &__photo {
+    max-width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.4);
+    // border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--p2 {
+      right: 5rem;
+      top: 2rem;
+    }
+
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+
+    &:hover {
+      outline: 1.5rem solid variables.$color-primary;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(variables.$color-black, 0.5);
+      z-index: 20;
+    }
+  }
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}

@@ -1,0 +1,67 @@
+@use "../abstracts/variables";
+
+.grid-test {
+  background-color: pink;
+}
+
+.row {
+  max-width: variables.$grid-width;
+  display: flex;
+  //   margin-bottom: variables.$gutter-vertical;
+
+  &:not(:last-of-type) {
+    margin-bottom: variables.$gutter-vertical;
+  }
+
+  & > * {
+    display: flex;
+    background-image: linear-gradient(
+      to right,
+      variables.$color-primary-light,
+      variables.$color-primary-dark
+    );
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    &:not(:last-child) {
+      margin-right: variables.$gutter-horizontal;
+    }
+  }
+
+  &__col-1-of-2 {
+    flex: 1 1 calc((100% - 2 * #{variables.$gutter-horizontal}) / 3);
+  }
+
+  &__col-1-of-3 {
+    flex: 1 1 calc((100% - 2 * #{variables.$gutter-horizontal}) / 3);
+  }
+
+  &__col-2-of-3 {
+    flex: 1 1
+      calc(
+        2 * ((100% - 2 * #{variables.$gutter-horizontal}) / 3) + #{variables.$gutter-horizontal}
+      );
+    // width: calc(
+    //   2 * ((100% - 2 * #{variables.$gutter-horizontal}) / 3) + #{variables.$gutter-horizontal}
+    // );
+  }
+
+  &__col-1-of-4 {
+    flex: 1 1 calc((100% - 3 * #{variables.$gutter-horizontal}) / 4);
+  }
+
+  &__col-2-of-4 {
+    flex: 1 1
+      calc(
+        2 * ((100% - 3 * #{variables.$gutter-horizontal}) / 4) + #{variables.$gutter-horizontal}
+      );
+  }
+
+  &__col-3-of-4 {
+    flex: 1 1
+      calc(
+        3 * ((100% - 3 * #{variables.$gutter-horizontal}) / 4) +
+          (2 *#{variables.$gutter-horizontal})
+      );
+  }
+}
